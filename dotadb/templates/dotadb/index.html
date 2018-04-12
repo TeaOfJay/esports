@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block style %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'dotadb/index.css' %}" />
+
+{% endblock style %}
+
+{% block content %}
+<div class="row-fluid no-gutters" id="background">
+    <!-- center -->
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file" id="file" name="replay" class="inputfile">
+        <label for="file">my label</label>
+        <!-- button -->
+    </form>
+</div>
+
+{% endblock content %}

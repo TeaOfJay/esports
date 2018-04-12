@@ -1,0 +1,30 @@
+
+
+p { 
+    text-indent : 50px;
+}
+
+
+#background {
+
+    background-image : url('/static/esports-arena.jpg');
+    background-size  : 100%;
+    /*background-image : linear-gradient(to bottom, transparent, #b20000), url('/static/esports-arena.jpg');*/
+
+    /*filter           : blur(1px);*/
+
+}
+
+#about {
+    color : var(--base-navbar-text-color);
+    background : white;
+    font-family: 'Quicksand';
+}
+#margin {
+    margin-top:200px;
+}
+
+#logo {
+    filter : none;
+    margin : auto;
+}

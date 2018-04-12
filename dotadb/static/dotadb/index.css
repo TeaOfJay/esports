@@ -1,0 +1,27 @@
+#background {
+    color : #bf1818;
+}
+
+.inputfile {
+    width : 0.1px;
+    height: 0.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1;
+}
+
+.inputfile + label{
+    font-size:1.25em;
+    font-weight:700;
+    color :white;
+    background-color:red;
+    display:inline-block;
+    cursor:pointer;
+
+    -webkit-translation-duration : 0.3s;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}

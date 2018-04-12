@@ -1,0 +1,34 @@
+{% extends "base.html" %}    
+
+
+{% block style %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
+
+{% endblock style %}
+
+{% block content %}
+    <div class="row no-gutters text-center" id="background"> 
+        <img src="{% static 'esports-transparent.png' %}" id="logo">
+        </img>
+
+    </div>
+    <div class="row no-gutters" id="about">
+        <div class = "col-md-4 col-md-offset-1" id="margin">
+            <h1 class = "display-2">Our club</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a tortor vel elit molestie ultricies a maximus felis. Morbi quis nisi non erat sodales rhoncus in ut ex. Nulla ornare nulla ipsum, nec euismod est pellentesque quis. Vestibulum nec elementum diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel dictum arcu, quis placerat ipsum. Duis elementum accumsan quam, sed rhoncus tortor tincidunt vitae. Cras volutpat ut nulla at imperdiet. Etiam semper gravida libero, et pharetra magna imperdiet nec. Quisque egestas libero non iaculis ultricies.<br>
+
+                Curabitur bibendum, sem pharetra tincidunt bibendum, dolor risus hendrerit odio, in laoreet dolor dui ac mauris. Morbi et tincidunt eros. In non mi mi. Vivamus bibendum ullamcorper velit et interdum. Morbi lacus nisi, hendrerit vel felis non, imperdiet volutpat augue. Nullam luctus dignissim nisl, pharetra interdum enim pretium non. Nunc odio mauris, auctor sit amet mi vitae, vestibulum molestie lacus. Ut orci nibh, tempor vitae luctus eget, pharetra eget metus. In fringilla tincidunt purus vitae semper. Suspendisse sit amet eros euismod, porttitor risus et, vestibulum tellus.
+            </p>
+        </div>
+    </div>
+    <div class="row no-gutters" id="about">
+        <div class="col-md-4 col-md-offset-7">
+            <h1 class = "display-2"> Join us!</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a tortor vel elit molestie ultricies a maximus felis. Morbi quis nisi non erat sodales rhoncus in ut ex. Nulla ornare nulla ipsum, nec euismod est pellentesque quis. Vestibulum nec elementum diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel dictum arcu, quis placerat ipsum. Duis elementum accumsan quam, sed rhoncus tortor tincidunt vitae. Cras volutpat ut nulla at imperdiet. Etiam semper gravida libero, et pharetra magna imperdiet nec. Quisque egestas libero non iaculis ultricies.<br>
+
+                Curabitur bibendum, sem pharetra tincidunt bibendum, dolor risus hendrerit odio, in laoreet dolor dui ac mauris. Morbi et tincidunt eros. In non mi mi. Vivamus bibendum ullamcorper velit et interdum. Morbi lacus nisi, hendrerit vel felis non, imperdiet volutpat augue. Nullam luctus dignissim nisl, pharetra interdum enim pretium non. Nunc odio mauris, auctor sit amet mi vitae, vestibulum molestie lacus. Ut orci nibh, tempor vitae luctus eget, pharetra eget metus. In fringilla tincidunt purus vitae semper. Suspendisse sit amet eros euismod, porttitor risus et, vestibulum tellus.
+        </div>
+    </div>
+{% endblock content %}

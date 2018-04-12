@@ -1,0 +1,53 @@
+
+
+/*
+red rgba(86,11,11,1);
+redder rgb(173, 17, 17)
+*/
+:root {
+    --base-navbar-text-color : rgba(173, 17, 17,1);
+    --base-navbar-bg-color   : rgba(224, 224, 224, 1);
+
+
+};
+
+#navbar {
+    background : var(--base-navbar-bg-color);/*#ff4444; /* #f44242; */
+
+    font-family : 'Quicksand';
+    font-size   : 16px;
+    color       : var(--base-navbar-text-color);
+    border      : none;
+}
+#brand {
+    font-size : 20px;
+    font-family : 'Quicksand';
+    color     : var(--base-navbar-text-color);
+
+}
+#content {
+    padding-top :54px;
+}
+
+.navbar {
+    margin-bottom : 0px;
+}
+
+
+.button-nav {
+    background-color : transparent;
+    color            : var(--base-navbar-text-color);
+    border           : none;
+    padding          : 5px;
+    margin           : 10px;
+    border-radius    : 30px;
+    font-size        : 16px;
+    font-family      : 'Quicksand';
+    -webkit-transition-duration:0.3s;
+}
+
+.button-nav:hover {
+    background-color : #ff9191;
+    color            : black;
+
+}
