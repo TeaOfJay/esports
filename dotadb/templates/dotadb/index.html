@@ -8,14 +8,25 @@
 {% endblock style %}
 
 {% block content %}
-<div class="row-fluid no-gutters" id="background">
+<div class="row-fluid no-gutters text-center" id="background">
     <!-- center -->
-    <form method="post" enctype="multipart/form-data">
+    <form action="{% url 'index'  %}" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        <input type="file" name="file" id="file" name="replay" class="inputfile">
-        <label for="file">my label</label>
+        <p> {{form.file}} </p>
+        <input type="submit" value="Upload" name="file" id="file" name="replay" class="inputfile">
+        <label for="file">upload</label>
         <!-- button -->
     </form>
+
+    {% if replays %}
+        <ul>
+        {% for replay in replays %}
+            <li><a href="{{ replay.replayfile.url }}">{{ replay.replayfile.name }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No documents found.</p>
+    {% endif %}
 </div>
 
 {% endblock content %}

@@ -12,3 +12,7 @@ class Player(models.Model):
 class LobbyMatch(models.Model):
     date_occured = models.DateField()
     players = models.ManyToManyField(Player)
+
+
+class Replay(models.Model):
+    replayfile = models.FileField(upload_to='replays/%Y_%m_%d')

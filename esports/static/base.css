@@ -6,19 +6,26 @@ redder rgb(173, 17, 17)
 */
 :root {
     --base-navbar-text-color : rgba(173, 17, 17,1);
-    --base-navbar-bg-color   : rgba(224, 224, 224, 1);
+    --base-navbar-bg-color   : white;
 
 
 };
+.navbar {
+    /* for priority override purposes */
+}
 
 #navbar {
     background : var(--base-navbar-bg-color);/*#ff4444; /* #f44242; */
-
     font-family : 'Quicksand';
     font-size   : 16px;
     color       : var(--base-navbar-text-color);
     border      : none;
+
+    -webkit-box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:0 6px 8px 0 rgba(0, 0, 0, 0.15);
 }
+
 #brand {
     font-size : 20px;
     font-family : 'Quicksand';

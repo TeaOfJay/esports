@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include, url
 
+from django.conf.urls.static import static
+
 #from esports.views import index
 from django.views.generic import TemplateView
-
+from django.conf import settings
 app_name = 'esports'
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$'     , TemplateView.as_view(template_name='index.html'), name="index"),
-    url(r'^dota/', include('dotadb.urls', namespace='dotadb')),
-]
+    url(r'^dota/', include('dotadb.urls', namespace='dotadb'))
+] 

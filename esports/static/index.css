@@ -5,10 +5,12 @@ p {
 }
 
 
+
 #background {
 
     background-image : url('/static/esports-arena.jpg');
     background-size  : 100%;
+    box-shadow : 0 10px 0 rgba(0, 0, 0, 0.2);
     /*background-image : linear-gradient(to bottom, transparent, #b20000), url('/static/esports-arena.jpg');*/
 
     /*filter           : blur(1px);*/

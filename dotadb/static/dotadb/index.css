@@ -1,5 +1,5 @@
 #background {
-    color : #bf1818;
+    color : #a50e0e;
 }
 
 .inputfile {
@@ -9,13 +9,13 @@
     overflow:hidden;
     position:absolute;
     z-index:-1;
+    border-style : dotted;
 }
 
 .inputfile + label{
     font-size:1.25em;
-    font-weight:700;
-    color :white;
-    background-color:red;
+    font-family:Quicksand;
+    color : var(--base-navbar-text-color);
     display:inline-block;
     cursor:pointer;
 
@@ -23,5 +23,5 @@
 }
 .inputfile:focus + label,
 .inputfile + label:hover {
-    background-color: red;
+    background-color: white;
 }

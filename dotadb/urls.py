@@ -5,7 +5,11 @@ from django.conf.urls import include, url
 #from esports.views import index
 from django.views.generic import TemplateView
 
+from .views import list
+from .views import index
+
 app_name='dotadb'
 urlpatterns = [
-    url(r'^$'     , TemplateView.as_view(template_name='dotadb/index.html'), name="index"),
+    url(r'^$'     , index, name="index"),
+    url(r'^list/$', list, name="list")
 ]
